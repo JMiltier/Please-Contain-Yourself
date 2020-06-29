@@ -2,7 +2,7 @@
 
 #### A note about the semantic formatting in this tutorial:
 
-- [ ] Check boxes are steps that need to be completed.
+- [X] Check boxes are steps that need to be completed.
 
 Text that looks `like this --for --example` are commands that you should type into your terminal. Or else.
 
@@ -20,15 +20,15 @@ Text that looks `like this --for --example` are commands that you should type in
 
 **Beware: this module picks up where Module 1 left off**
 
-- [ ] Let's jump right in by spinning up a brand new container from a brand new image! Run:
+- [X] Let's jump right in by spinning up a brand new container from a brand new image! Run:
 ```sh
 docker run -d -p 80:80 --name webserver nginx
 ```
 **As was the case the first time you ran the hello-world image; it looks for the 'nginx' image cached locally and when it cannot find it, Docker downloads it from Dockerhub... which will take just a bit of time**
 
-- [ ] We'll break down that command we just used piece by piece in a bit, but for now run `docker ps` and note that this container shows up in the report despite the fact that we did not add the ` -a` flag.
+- [X] We'll break down that command we just used piece by piece in a bit, but for now run `docker ps` and note that this container shows up in the report despite the fact that we did not add the ` -a` flag.
 
-- [ ] This is because 'docker ps' displays only the containers currently running on your machine and the nginx container we just spun up is still running! Go ahead and check this out by opening up a web browser and navigating to `localhost:80`
+- [X] This is because 'docker ps' displays only the containers currently running on your machine and the nginx container we just spun up is still running! Go ahead and check this out by opening up a web browser and navigating to `localhost:80`
 
 ![dockernginx](https://github.com/dylanlrrb/P-C-Y-Assets/blob/master/2/dockernginx.png?raw=true)
 
@@ -156,7 +156,7 @@ Looks like you're going to have to get rid of your 'hello-world' containers! The
 ---
 >Pro-Tip: save time by running `docker rm` just once. Simply follow the command with all the container names you would like to remove, like so:
 >
->`docker rm <container-name> <container-name> <container-name> <container-name>` 
+>`docker rm <container-name> <container-name> <container-name> <container-name>`
 
 ---
 
